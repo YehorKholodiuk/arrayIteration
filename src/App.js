@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Menu from "./Menu";
+import Logo from "./Logo";
 
 function App() {
+    const siteName = 'PASV coding school'
     const courses = [
         {
             id: 'jkjij87',
@@ -24,7 +26,8 @@ function App() {
     ]
     return (
         <div>
-            <Menu courses={courses}/>
+            <Logo siteName={siteName}/>
+            <Menu courses={courses} siteName={siteName}/>
         </div>
     );
 }
